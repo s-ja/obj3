@@ -106,6 +106,7 @@ header{
         transform: translate(-50%);
         width: 1920px;
         z-index: -100;
+        background: purple;
     }
     .fragment1{
         width: 1200px;
@@ -139,6 +140,7 @@ header{
     }
 }
 .article{
+    background: rebeccapurple;
     width: 1200px;
     margin: 0 auto;
     position: relative;
