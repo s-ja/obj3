@@ -8,9 +8,6 @@ function menu(){
     //     var _this = $(this);
     //     _this.children(".lnb").slideDown()
     // });
-    // $(".gnb > li").mouseleave(function(){
-    //     if(!$(".lnb").hasClass("d_none"))$(".lnb").addClass("d_none")
-    // });
     var GNB = $(".gnb > li");
     GNB.on({
         mouseenter:function(){
