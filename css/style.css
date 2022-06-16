@@ -79,7 +79,6 @@ header {
   color: aliceblue;
 }
 .gnb .lnb {
-  display: none;
   position: absolute;
   top: 0;
   left: 105%;
@@ -95,6 +94,7 @@ header {
   background: aliceblue;
   color: black;
 }
+
 .hero_wrap .hero > img {
   position: absolute;
   top: 0;

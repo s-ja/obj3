@@ -74,7 +74,7 @@ header{
         }
     }
     .lnb{
-        display: none;
+        // display: none;
         position: absolute;
         top: 0;
         left: 105%;
@@ -85,16 +85,10 @@ header{
         color: aliceblue;
         text-align: left;
         text-transform: uppercase;
-        li{
-
-        }
         li:hover{
             background: aliceblue;
             color: black;
         }
-    }
-    >li:nth-child(1)>ul.lnb{
-        // display: block;
     }
 }
 
