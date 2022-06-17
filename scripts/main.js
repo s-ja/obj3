@@ -1,5 +1,6 @@
 $(function(){
     menu()
+    shop()
 })
 
 function menu(){
@@ -19,4 +20,21 @@ function menu(){
             _this.children(".lnb").stop().slideUp("fast")
         }
     })
+}
+
+
+function shop(){
+    // if(!$(".store_view_wrap").children().hasClass("on")){
+    //     $(".store_view").removeClass("on")
+    // };
+    $(".store_list > li").mouseenter(function(){
+        var store_list_idx = $(this).index()
+        console.log(store_list_idx);
+        $(".store_view").eq(store_list_idx).addClass("on")
+    });
+    $(".store_list > li").mouseleave(function(){
+        var store_list_idx = $(this).index()
+        console.log(store_list_idx);
+        $(".store_view").eq(store_list_idx).removeClass("on")
+    });
 }

@@ -216,7 +216,6 @@ header{
         border-bottom-right-radius: 40px;
         .store_view{
             display: none;
-            display: block;
             .store_front{
                 position: absolute;
                 top: 10px;
@@ -263,9 +262,12 @@ header{
                     font-size: 1.5em;
                 }
             }
-            >:nth-child(1){
-                display: block;
-            }
+        }
+       .on{
+            display: block;
+            // background: rebeccapurple;
+            width: 100%;
+            height: 100%;
         }
     }
 }

@@ -220,7 +220,6 @@ header {
 }
 .store_wrap .store_view_wrap .store_view {
   display: none;
-  display: block;
 }
 .store_wrap .store_view_wrap .store_view .store_front {
   position: absolute;
@@ -268,8 +267,10 @@ header {
   font-weight: 900;
   font-size: 1.5em;
 }
-.store_wrap .store_view_wrap .store_view > :nth-child(1) {
+.store_wrap .store_view_wrap .on {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 aside {
