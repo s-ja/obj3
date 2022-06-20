@@ -1,0 +1,271 @@
+.d_none {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.5;
+  font-family: "Gothic A1", sans-serif;
+  color: aliceblue;
+  background: black;
+  overflow-x: hidden;
+}
+
+a, a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  width: 1200px;
+  height: 400px;
+}
+.logo img {
+  width: 1200px;
+}
+
+.top_nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  column-gap: 10px;
+  font-size: 1.25em;
+  color: black;
+}
+
+.gnb {
+  width: 140px;
+  height: 160px;
+  padding: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: black;
+  font-weight: 900;
+  font-size: 1.285em;
+  text-transform: uppercase;
+  text-align: right;
+}
+.gnb li {
+  padding: 5px 0;
+  position: relative;
+}
+.gnb li a {
+  display: block;
+}
+.gnb li:hover {
+  background: black;
+  color: aliceblue;
+}
+.gnb .lnb {
+  position: absolute;
+  top: 0;
+  left: 105%;
+  width: 200px;
+  font-weight: 500;
+  background: black;
+  color: aliceblue;
+  text-align: left;
+  text-transform: uppercase;
+}
+.gnb .lnb li:hover {
+  background: aliceblue;
+  color: black;
+}
+
+.article {
+  width: 1200px;
+  margin: 50px auto;
+}
+.article .category_wrap .category {
+  display: flex;
+  justify-content: space-between;
+}
+.article .best_wrap {
+  margin: 20px 0;
+  padding: 20px 0;
+  height: 350px;
+  text-align: center;
+  border: 5px solid aliceblue;
+  border-bottom-right-radius: 50px;
+}
+.article .best_wrap h2 {
+  font-weight: 900;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.article .best_wrap .best {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 50px;
+}
+.article .best_wrap .best li a {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 230px;
+}
+.article .best_wrap .best li a h3 {
+  font-weight: 900;
+  font-size: 5em;
+}
+.article .best_wrap .best li a img {
+  background: whitesmoke;
+  width: 230px;
+  height: 230px;
+}
+.article .new_wrap {
+  height: 350px;
+}
+.article .new_wrap h2 {
+  font-weight: 900;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}
+.article .new_wrap .new {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.article .new_wrap .new li {
+  background: whitesmoke;
+  width: 200px;
+  height: 200px;
+}
+
+.shop {
+  width: 1200px;
+  margin: 0 auto;
+}
+.shop *, .shop *::after, .shop *::before {
+  border: 1px solid greenyellow;
+}
+.shop .shop_wrap {
+  height: 1400px;
+  position: relative;
+  padding: 50px 0;
+  border: 5px solid aliceblue;
+  border-radius: 40px;
+}
+.shop .shop_wrap select {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: aliceblue;
+  width: 100px;
+  height: 30px;
+  border-top-right-radius: 35px;
+  text-transform: capitalize;
+}
+.shop .shop_wrap .product_wrap .product_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.shop .shop_wrap .product_wrap .product_list .product_each {
+  width: 200px;
+  height: 300px;
+  border: 2px solid red;
+  background: slategray;
+}
+.shop .shop_wrap .product_wrap .product_list .product_each ul {
+  background: darkcyan;
+}
+
+footer {
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+footer .footer_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .footer_left .terms {
+  background: white;
+  color: black;
+  height: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+footer .footer_left .sns {
+  display: flex;
+  column-gap: 10px;
+}
+footer .footer_left .guide select {
+  background: none;
+  border: 1px solid white;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+footer .footer_left .guide select option {
+  background: black;
+}
+footer .footer_left .cs h2 {
+  font-weight: 900;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+footer .footer_center ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+footer .footer_center ul img {
+  width: 20%;
+}
+footer .footer_center ul > :nth-child(2) {
+  font-size: 0.825em;
+}
+footer .footer_right .footer_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 120px;
+}
+footer .footer_right .footer_menu li {
+  background: white;
+  color: black;
+  border-radius: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/*# sourceMappingURL=shop.css.map */
