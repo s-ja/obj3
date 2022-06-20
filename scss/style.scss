@@ -321,14 +321,14 @@ aside{
 
 footer{
     width: 1200px;
-    height: 200px;
+    height: 300px;
     display: flex;
     position: absolute;
     top: 2800px;
     left: 50%;
     transform: translate(-50%,-50%);
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 50px 20px;
     .footer_left{
         display: flex;
         flex-direction: column;
@@ -356,6 +356,9 @@ footer{
                 border-radius: 10px;
                 color: white;
                 text-transform: uppercase;
+                option{
+                    background: black;
+                }
             }
         }
         .cs{

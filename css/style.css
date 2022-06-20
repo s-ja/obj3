@@ -321,14 +321,14 @@ aside .notice button {
 
 footer {
   width: 1200px;
-  height: 200px;
+  height: 300px;
   display: flex;
   position: absolute;
   top: 2800px;
   left: 50%;
   transform: translate(-50%, -50%);
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 50px 20px;
 }
 footer .footer_left {
   display: flex;
@@ -357,6 +357,9 @@ footer .footer_left .guide select {
   border-radius: 10px;
   color: white;
   text-transform: uppercase;
+}
+footer .footer_left .guide select option {
+  background: black;
 }
 footer .footer_left .cs h2 {
   font-weight: 900;
