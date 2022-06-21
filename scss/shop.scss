@@ -157,7 +157,7 @@ header{
 }
 .shop{
     *,*::after,*::before{
-        border: 1px solid greenyellow;
+        // border: 1px solid greenyellow;
     }
     width: 1200px;
     margin: 0 auto;
@@ -177,20 +177,97 @@ header{
             height: 30px;
             border-top-right-radius: 35px;
             text-transform: capitalize;
+            border: 0;
+            option{
+                font-size: .825em;
+                background: black;
+            }
         }
         .product_wrap{
             .product_list{
                 display: flex;
                 flex-wrap: wrap;
+                row-gap: 20px;
                 justify-content: space-around;
                 .product_each{
                     width: 200px;
                     height: 300px;
-                    border: 2px solid red;
-                    background: slategray;
-                    ul{
-                        background: darkcyan;
-                        
+                    background: rgb(61, 61, 61);
+                    border-radius: 20px;
+                    overflow: hidden;
+                    .product{
+                        >li:nth-child(1){
+                            width: 200px;
+                            height: 200px;
+                            img{
+                                margin: 10px;
+                                // border-radius: 20px;
+                            }
+                        }
+                        >li:nth-child(2){
+                            padding: 10px;
+                            >ul>li:nth-child(1){
+                                font-weight: 900;
+                                font-size: 1.5em;
+                                text-align: right;
+                                text-transform: capitalize;
+                                // padding: 2px 0;
+                            }
+                            >ul>li:nth-child(2){
+                                ul{
+                                    display: flex;
+                                    justify-content: end;
+                                    column-gap: 3px;
+                                    li{
+                                        width: 20px;
+                                        height: 20px;
+                                        border-radius: 5px;
+                                        img{
+                                            // object-fit: contain;
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            >ul>li:nth-child(3){
+                                font-weight: 100;
+                                display: inline-block;
+                                font-size: 1.8em;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+            .pagenation{
+                width: 1000px;
+                margin: 20px auto;
+                display: flex;
+                justify-content: center;
+                column-gap: 10px;
+                font-size: 1.25em;
+                color: rgb(176, 176, 176);
+            }
+        }
+        .recent_view_wrap{
+            margin-top: 100px;
+            text-align: center;
+            font-weight: 900;
+            font-size: 1.2em;
+            text-transform: capitalize;
+            padding: 0 20px;
+            h2{
+                text-align: left;
+            }
+            .viewed_list{
+                display: flex;
+                margin: 20px auto;
+                justify-content: space-evenly;
+                li{
+                    img{
+                        width: 100px;
+                        height: 100px;
                     }
                 }
             }
@@ -202,6 +279,7 @@ header{
 footer{
     width: 1200px;
     height: 300px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 50px 20px;

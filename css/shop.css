@@ -160,9 +160,6 @@ header {
   width: 1200px;
   margin: 0 auto;
 }
-.shop *, .shop *::after, .shop *::before {
-  border: 1px solid greenyellow;
-}
 .shop .shop_wrap {
   height: 1400px;
   position: relative;
@@ -180,25 +177,95 @@ header {
   height: 30px;
   border-top-right-radius: 35px;
   text-transform: capitalize;
+  border: 0;
+}
+.shop .shop_wrap select option {
+  font-size: 0.825em;
+  background: black;
 }
 .shop .shop_wrap .product_wrap .product_list {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 20px;
   justify-content: space-around;
 }
 .shop .shop_wrap .product_wrap .product_list .product_each {
   width: 200px;
   height: 300px;
-  border: 2px solid red;
-  background: slategray;
+  background: rgb(61, 61, 61);
+  border-radius: 20px;
+  overflow: hidden;
 }
-.shop .shop_wrap .product_wrap .product_list .product_each ul {
-  background: darkcyan;
+.shop .shop_wrap .product_wrap .product_list .product_each .product > li:nth-child(1) {
+  width: 200px;
+  height: 200px;
+}
+.shop .shop_wrap .product_wrap .product_list .product_each .product > li:nth-child(1) img {
+  margin: 10px;
+}
+.shop .shop_wrap .product_wrap .product_list .product_each .product > li:nth-child(2) {
+  padding: 10px;
+}
+.shop .shop_wrap .product_wrap .product_list .product_each .product > li:nth-child(2) > ul > li:nth-child(1) {
+  font-weight: 900;
+  font-size: 1.5em;
+  text-align: right;
+  text-transform: capitalize;
+}
+.shop .shop_wrap .product_wrap .product_list .product_each .product > li:nth-child(2) > ul > li:nth-child(2) ul {
+  display: flex;
+  justify-content: end;
+  column-gap: 3px;
+}
+.shop .shop_wrap .product_wrap .product_list .product_each .product > li:nth-child(2) > ul > li:nth-child(2) ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+.shop .shop_wrap .product_wrap .product_list .product_each .product > li:nth-child(2) > ul > li:nth-child(2) ul li img {
+  width: 20px;
+  height: 20px;
+}
+.shop .shop_wrap .product_wrap .product_list .product_each .product > li:nth-child(2) > ul > li:nth-child(3) {
+  font-weight: 100;
+  display: inline-block;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+.shop .shop_wrap .product_wrap .pagenation {
+  width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  font-size: 1.25em;
+  color: rgb(176, 176, 176);
+}
+.shop .shop_wrap .recent_view_wrap {
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  padding: 0 20px;
+}
+.shop .shop_wrap .recent_view_wrap h2 {
+  text-align: left;
+}
+.shop .shop_wrap .recent_view_wrap .viewed_list {
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-evenly;
+}
+.shop .shop_wrap .recent_view_wrap .viewed_list li img {
+  width: 100px;
+  height: 100px;
 }
 
 footer {
   width: 1200px;
   height: 300px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 50px 20px;
