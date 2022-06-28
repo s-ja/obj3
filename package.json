@@ -1,0 +1,20 @@
+{
+  "name": "obj3",
+  "version": "1.0.0",
+  "description": "한울직업전문학교 스마트ux/ui디자인과정 디자인 프로젝트",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-ja/obj3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-ja/obj3/issues"
+  },
+  "homepage": "https://github.com/s-ja/obj3#readme"
+}
